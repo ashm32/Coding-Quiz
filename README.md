@@ -5,6 +5,7 @@
 * The quiz ends when all questions are answered or the timer reaches 0.
 * When the game ends, it displays the users score and propmts the user to save their initials and their score (which can be viewed in latest scores)
  
+ Deployed URL: https://ashm32.github.io/Coding-Quiz/ 
  Screenshots of the deployed application:
 <img width="945" alt="Screenshot 2023-04-26 at 19 18 10" src="https://user-images.githubusercontent.com/127209262/234667026-3b03e249-5aa6-4fa3-9248-f62f9808b5e7.png">
 <img width="945" alt="Screenshot 2023-04-26 at 19 18 50" src="https://user-images.githubusercontent.com/127209262/234667166-b5e4ad14-da14-4c1f-aa44-f5d2e36ee528.png">
