@@ -1,48 +1,77 @@
 <!DOCTYPE html>
-<html lang="en-gb">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Coding Quiz</title>
+<html lang="en">
 
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
 
-  <body>
-    <div class="scores"><a href="highscores.html">View Highscores</a></div>
+<body>
 
-    <div class="timer">Time: <span id="time">0</span></div>
+    <div class="main-container">
 
-    <div class="wrapper">
-      <div id="start-screen" class="start">
-        <h1>Coding Quiz Challenge</h1>
-        <p>
-          Try to answer the following code-related questions within the time
-          limit. Keep in mind that incorrect answers will penalize your
-          score/time by ten seconds!
-        </p>
-        <button id="start">Start Quiz</button>
-      </div>
+        <div class="scores-link">
+            <a class="btn" href="scores.html">See latest scores</a>
+        </div>
 
-      <div id="questions" class="hide">
-        <h2 id="question-title"></h2>
-        <div id="choices" class="choices"></div>
-      </div>
+        <div class="quiz-start">
+            <p class="quiz-instructions">
+                This is a code quiz that will test your knowledge about web development.
+            </p>
+            <button class="btn quiz-start-btn">Start Quiz</button>
+        </div>
 
-      <div id="end-screen" class="hide">
-        <h2>All done!</h2>
-        <p>Your final score is <span id="final-score"></span>.</p>
-        <p>
-          Enter initials: <input type="text" id="initials" max="3" />
-          <button id="submit">Submit</button>
-        </p>
-      </div>
+        <div class="quiz-container">
+            <div class="quiz-timer">
+                <p class="timer"></p>
+                <div class="progress-bar-wrap">
+                    <p class="progress-bar"></p>
+                </div>
+            </div>
 
-      <div id="feedback" class="feedback hide"></div>
+            <h1>Code Quiz</h1>
+            <h2 class="quiz-question">Coding Question</h2>
+            <ul>
+                <li>
+                    <label class="checkbox">
+                        <input type="checkbox"><span id="answer1" class="answers" data-value="1">coding answers</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="checkbox">
+                        <input type="checkbox"><span id="answer2" class="answers" data-value="2">coding answers</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="checkbox">
+                        <input type="checkbox"><span id="answer3" class="answers" data-value="3">coding answers</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="checkbox">
+                        <input type="checkbox"><span id="answer4" class="answers" data-value="4">coding answers</span>
+                    </label>
+                </li>
+            </ul>
+
+            <!-- <button class="btn next-question">Next Question</button> -->
+
+            <p class="feedback"></p>
+        </div>
+
+        <div class="quiz-score-container">
+            <p class="quiz-score"></p>
+            <button class="btn restart-btn">Retake Quiz</button>
+        </div>
+
     </div>
 
     <script src="questions.js"></script>
-    <script src="logic.js"></script>
-  </body>
+    <script src="app.js"></script>
+</body>
+
 </html>
